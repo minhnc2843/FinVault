@@ -1,0 +1,168 @@
+{
+  "identity": {
+    "name": "FinVault",
+    "persona": "E1 - The Anti-AI Designer",
+    "tone": "Trustworthy, Professional, Modern, Data-Driven",
+    "archetype": "Swiss & High-Contrast (Fintech Variant)"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Outfit, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "bold": 700,
+      "black": 900
+    },
+    "rules": [
+      "Headings > 32px must use tracking-tight",
+      "Overlines must be uppercase + tracking-widest + text-xs",
+      "Numbers in charts/tables must use tabular-nums"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#0F172A",
+        "foreground": "#F8FAFC",
+        "50": "#F8FAFC",
+        "100": "#F1F5F9",
+        "200": "#E2E8F0",
+        "300": "#CBD5E1",
+        "400": "#94A3B8",
+        "500": "#64748B",
+        "600": "#475569",
+        "700": "#334155",
+        "800": "#1E293B",
+        "900": "#0F172A",
+        "950": "#020617"
+      },
+      "accent": {
+        "DEFAULT": "#2563EB",
+        "foreground": "#FFFFFF",
+        "glow": "rgba(37, 99, 235, 0.5)"
+      },
+      "success": {
+        "DEFAULT": "#10B981",
+        "foreground": "#FFFFFF"
+      },
+      "warning": {
+        "DEFAULT": "#F59E0B",
+        "foreground": "#FFFFFF"
+      },
+      "destructive": {
+        "DEFAULT": "#EF4444",
+        "foreground": "#FFFFFF"
+      },
+      "background": {
+        "light": "#F8FAFC",
+        "dark": "#020617"
+      }
+    },
+    "forbidden": [
+      "#7351B7",
+      "#1B93A4"
+    ],
+    "gradients": {
+      "card_hover": "linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%)",
+      "active_border": "linear-gradient(90deg, #2563EB 0%, #60A5FA 100%)"
+    }
+  },
+  "layout": {
+    "spacing_scale": [
+      "p-1", "p-2", "p-4", "p-6", "p-8", "p-12", "p-16", "p-24", "p-32"
+    ],
+    "grids": {
+      "dashboard": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "marketing": "grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8"
+    },
+    "containers": {
+      "card": "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm",
+      "glass": "bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl border border-white/20 shadow-lg"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 rounded-lg font-medium transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-6 rounded-lg font-medium",
+      "ghost": "hover:bg-accent hover:text-accent-foreground h-10 px-4 rounded-lg"
+    },
+    "inputs": {
+      "default": "h-10 rounded-lg border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "cards": {
+      "dashboard_widget": "p-6 flex flex-col justify-between h-full"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+      "glow": "0 0 20px -5px var(--accent-glow)"
+    },
+    "borders": {
+      "subtle": "1px solid rgba(148, 163, 184, 0.2)",
+      "highlight": "1px solid rgba(37, 99, 235, 0.5)"
+    },
+    "textures": {
+      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "default": "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+      "smooth": "all 0.5s cubic-bezier(0.16, 1, 0.3, 1)"
+    },
+    "animations": {
+      "fade_in": {
+        "initial": { "opacity": 0, "y": 10 },
+        "animate": { "opacity": 1, "y": 0 },
+        "transition": { "duration": 0.4 }
+      },
+      "stagger_list": {
+        "container": {
+          "hidden": { "opacity": 0 },
+          "show": {
+            "opacity": 1,
+            "transition": { "staggerChildren": 0.05 }
+          }
+        },
+        "item": {
+          "hidden": { "opacity": 0, "y": 10 },
+          "show": { "opacity": 1, "y": 0 }
+        }
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "login_bg": "https://images.unsplash.com/photo-1538806932492-b6ac36ccfa28?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "avatars": [
+        "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1738566061505-556830f8b8f5?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1758600587839-56ba05596c69?crop=entropy&cs=srgb&fm=jpg&q=85"
+      ]
+    },
+    "icons": "lucide-react"
+  },
+  "libraries": {
+    "charts": "recharts",
+    "animations": "framer-motion",
+    "dates": "date-fns",
+    "forms": "react-hook-form + zod",
+    "ui": "shadcn/ui"
+  },
+  "universal_guidelines": [
+    "Do not use gradients for dark colors.",
+    "Avoid generic centered layouts.",
+    "Use glass-morphism with backdrop-blur-xl.",
+    "Do not use 'transition: all'.",
+    "Do not center align the App container.",
+    "Use 'sonner' for toasts.",
+    "All interactive elements must have data-testid."
+  ],
+  "instructions_to_main_agent": "Implement the design system strictly. Use the provided color palette and typography. Ensure all dashboards follow the 'Control Room' grid logic. Use Recharts for all data visualization. Prioritize accessibility and contrast."
+}
